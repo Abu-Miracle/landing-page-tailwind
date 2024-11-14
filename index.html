@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Landing</title>
+</head>
+
+<body class="font-sans">
+   <header class="flex py-5 px-7 justify-between items-center">
+
+    <div id="logo" class=" flex w-7 h-7">
+        <img src="svg/wifi.svg">
+        <p class="text-lg font-bold ml-2 text-orange-900">WireShark</p>
+    </div>
+
+     <!-- Hamburger Icon -->
+    <button id="menu-toggle" class="lg:hidden focus:outline-none">
+        <svg class="w-8 h-8 text-orange-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+    </button>
+
+    <!-- Navigation Menu -->
+    <div id="menu" class="hidden lg:flex flex-col lg:flex-row gap-7 text-base text-slate-700 items-center lg:static absolute top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent p-5 lg:p-0 shadow-lg lg:shadow-none">
+        <a href="#" class="block py-2 text-center"><nav class="font-semibold hover:text-orange-900 hover:scale-110">Home</nav></a>
+        <a href="#about" class="block py-2 text-center whitespace-nowrap">
+            <nav class="font-semibold hover:text-orange-900 hover:scale-110">About Us</nav>
+        </a>
+        <a href="#contact" class="block py-2 text-center"><nav class="font-semibold hover:text-orange-900 hover:scale-110">Contact</nav></a>
+        <a href="/gallery.html" class="block py-2 text-center whitespace-nowrap"><nav class="font-semibold hover:text-orange-900 hover:scale-110">Image gallery</nav></a>
+        <a href="/testimonial.html" class="block py-2 text-center"><nav class="font-semibold hover:text-orange-900 hover:scale-110">Testimonials</nav></a>
+        <button class="block w-full bg-white font-semibold text-orange-900 border border-orange-900 px-3 py-2 rounded-3xl hover:bg-orange-900 hover:text-white text-center mt-2 lg:ml-10 lg:inline-block">
+          Sign Up
+        </button>
+      </div>
+
+   </header>
+
+    <section class="bg-gradient-to-b from-orange-950 to-orange-700 flex py-20 px-10 md:px-40 mx-auto justify-center items-center w-full">
+        <div class="text-center my-34 py-12 justify-center">
+            <img src="svg/wifi2.svg" class="mx-auto mb-8 hover:scale-110">
+            <h1 class="md:text-5xl font-bold text-white mb-10 text-3xl">Empowering Your Network, One Connection at a Time</h1>
+            <p class="text-xl text-white">WireShark delivers state-of-the-art network monitoring, analysis, and optimization tools to keep your systems running smoothly and securely. Stay ahead of the curve with real-time insights and expert support. With cutting-edge technology and expert solutions, we help businesses optimize their networks for performance and security</p>
+            <button href="#" class="rounded-3xl text-xl font-semibold border-2 border-white hover:bg-white hover:text-orange-900 text-white py-2 px-5 mt-10">GET STARTED</button>
+
+        </div>
+    </section>
+
+   <section id="about" class="bg-white py-14">
+        <h1 class="text-center text-4xl font-bold text-orange-900 mb-5">About Us</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 px-10 mt-10 mb-10">
+            <div class="bg-orange-100 px-5 py-7 rounded-xl">
+                <img src="svg/innovative.svg" class="mb-3 hover:scale-110">
+                <h1 class="text-xl font-bold mb-4 ">Innovative Network Solutions</h1>
+                <p>We specialize in providing cutting-edge network solutions designed to enhance your connectivity and streamline communication. Our team is dedicated to developing systems that keep your network secure, efficient, and scalable</p>
+            </div>
+            <div class="bg-slate-200 px-5 py-7 rounded-xl">
+                <img src="svg/expert.svg" class="mb-3 hover:scale-110">
+                <h1 class="text-xl font-bold mb-4">Expertise You Can Trust</h1>
+                <p>With years of experience in the industry, WireShark is committed to delivering unparalleled service and expertise. Our professionals are skilled in network monitoring, optimization, and security, ensuring your systems operate at their best</p>
+            </div>
+            <div class="bg-orange-100 px-5 py-7 rounded-xl">
+                <img src="svg/customer.svg" class="mb-3 hover:scale-110">
+                <h1 class="text-xl font-bold mb-4">Customer-Centric Approach</h1>
+                <p>At WireShark, we put our clients first. We work closely with businesses to understand their needs, providing tailored solutions that align with their goals. Your success is our priority, and we're here to support you every step of the way</p>
+            </div>
+            <div class="bg-slate-200 px-5 py-7 rounded-xl">
+                <img src="svg/advanced.svg" class="mb-3 hover:scale-110">
+                <h1 class="text-xl font-bold mb-4">Advanced Real-Time Insights</h1>
+                <p>Stay ahead of the curve with our advanced monitoring tools and real-time insights. We provide detailed analytics that help you optimize network performance and troubleshoot issues before they affect your operations</p>
+            </div>
+        </div>
+   </section>
+
+   <footer id="contact" class="py-10 bg-orange-900">
+        <h1 class="text-center text-4xl font-bold text-white mt-10 mb-20">Contact</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-20 my-5 align-top">
+            <div class="px-5 py-3 rounded-xl flex flex-col justify-center items-center text-center">
+                <img src="svg/location.svg" class="w-40 h-40">
+                <h1 class="text-xl font-bold mb-4 text-white">Location</h1>
+                <p class="text-white ">
+                    123 Maple Lane Springfield, IL 62704 USA  
+                </p>
+            </div>
+            <div class="px-5 py-3 rounded-xl flex flex-col justify-center items-center text-center">
+                <img src="svg/phone.svg" class="w-20 h-20 mb-4">
+                <h1 class="text-xl font-bold mb-4 text-white">Phone</h1>
+                <p class="text-white ">+234 908 798 0748 <br>+234 908 798 0749 <br>+234 908 798 0750 
+                </p>
+            </div>
+            <div class="px-5 py-3 rounded-xl flex flex-col justify-center items-center text-center">
+                <img src="svg/instagram.svg" class="w-20 h-20 mb-4">
+                <h1 class="text-xl font-bold mb-4 text-white">Instagram</h1>
+                <p class="text-white">@wireshark_io <br>@wireshark_net 
+                </p>
+            </div>
+            <div class="px-5 py-3 rounded-xl flex flex-col justify-center items-center text-center">
+                <img src="svg/email.svg" class="w-20 h-20 mb-4">
+                <h1 class="text-xl font-bold mb-4 text-white">Email</h1>
+                <p class="text-white ">wiresharknetwork@gmail.com <br>wiresharknet9087@gmail.com 
+                </p>
+            </div>
+        </div>  
+   </footer>
+
+   <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
